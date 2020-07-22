@@ -1,0 +1,82 @@
+.covia-subtitle {
+    font-size: 30px;
+    word-break: break-word;
+    color: #363636;
+    line-height: 1.25;
+    text-align: center;
+    font-weight: 300 !important;
+  }
+  .covia-fetched-info {
+    color: #526488;
+    text-align: center;
+  }
+  .covia-fetched-links {
+      display: block;
+      text-align: center;
+  }
+  .collab-image {
+    width: 351px;
+    padding: 15px;
+  }
+  .image-center {
+      text-align: center;
+  }
+  .robomx {
+      text-align: center;
+      font-size: 20px;
+      font-family: 'rubik';
+      color: #000;
+  }
+
+  .bb {
+    width: 470px;
+    height: 118px;
+  }
+  .header-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .covia-news {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .news-img {
+    border: 0;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    display: block;
+    box-shadow: 0 0 6px 0px #aca7a7;
+    border-radius: 3px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.instagram{ 
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.white {
+  color: white;
+}
+
+ion-icon {
+  font-size: 40px;
+}
+
+.telegram {
+  background-color: #0088cc;
+}
+
+.twitter {
+  background-color: #00acee;
+}

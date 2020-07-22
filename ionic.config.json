@@ -1,0 +1,8 @@
+{
+  "name": "covia",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "30bea014"
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>COVIA2020 | RoboMx Team</title>
+
+  <base href="/"/>
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="msapplication-tap-highlight" content="no"/>
+  
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
+  <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
+  <meta name="robots" content="index, follow">
+  <meta name="distribution" content="global">
+  <meta name="Description" content="COVIA - Corona virus alert app containing informative real-time data of the outburst">
+
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y484G758EN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y484G758EN');
+  </script>
+  <link rel="manifest" href="manifest.webmanifest" >
+  <meta name="theme-color" content="#1976d2">
+  <script>
+    window.isUpdateAvailable = new Promise(function(resolve, reject) {
+    // lazy way of disabling service workers while developing
+    if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) {
+      // register service worker file
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => {
+          reg.onupdatefound = () => {
+            const installingWorker = reg.installing;
+            installingWorker.onstatechange = () => {
+              switch (installingWorker.state) {
+                case 'installed':
+                  if (navigator.serviceWorker.controller) {
+                    // new update available
+                    resolve(true);
+                  } else {
+                    // no update available
+                    resolve(false);
+                  }
+                  break;
+              }
+            };
+          };
+        })
+        .catch(err => console.error('[SW ERROR]', err));
+    }
+  });
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+</html>

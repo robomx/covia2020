@@ -1,0 +1,49 @@
+
+<ion-header>
+  <ion-toolbar>
+    <div class="header-section">
+      <ion-title class="ion-text-left">{{AppRef.content.updates[AppRef.currentLang]['updates']}}</ion-title>
+      <div class="toogle-left">
+        <ion-select  [(ngModel)]="AppRef.currentLang" interface="popover">
+          <ion-select-option  value="en">English</ion-select-option>
+          <ion-select-option  value="hi">Hindi</ion-select-option>
+          <ion-select-option value="pb">Punjabi</ion-select-option>
+        </ion-select>
+    </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h6 class="source ion-text-center">{{AppRef.content.updates[AppRef.currentLang]['dataSource']}}: <a href="https://www.mohfw.gov.in/" target="_blank">{{AppRef.content.updates[AppRef.currentLang]['mohfw']}}</a></h6>
+  <h3 class="ion-text-right">Last updated on 22nd July 2020</h3>
+
+  <div class="covia-card-flex">
+    <ion-card style="min-width: 190px;min-height: 166px;" *ngFor="let card of meta"  >
+      <ion-card-header>
+        <img [src]="card.src" style="width: unset; margin:auto" >
+      </ion-card-header>
+    
+      <ion-card-content>
+        <h2 style="font-size: 22px;text-align: center;">{{card.count}}</h2>
+        <p style="font-size: 17px;text-align: center;">{{card.text}}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf="table_head.length == 0">
+        <p style="height: 56px;display: flex;justify-content: center;" *ngFor="let tables of [1,2,3,4,5,6,7,8,9]" ><ion-skeleton-text animated style="width: 80%"></ion-skeleton-text></p>
+   </div>
+
+  <div class="covia-table-flex" *ngIf="table_head.length > 0" >
+    <table class="covia-table">
+      <tr class="covia-table-row">
+        <th class="table-data data-width" *ngFor="let col of table_head">{{col}}</th>
+      </tr>
+        <tr class="covia-table-row"  *ngFor="let row of table_data">
+          <td colspan="1" class="table-data data-width" *ngFor="let col of row" >{{col}}</td>
+        </tr>
+    </table>
+  </div>
+</ion-content>

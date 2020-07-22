@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-text color="warning" class="ion-text-center">
+    <h3>This project is archived now. Check 
+      <a href="https://aarogyaprahari.in" class="btn-warning">Aarogya Prahari</a>
+    </h3>
+  </ion-text>
+  <ion-toolbar>
+    <div class="header-section">
+      <ion-title class="ion-text-left">{{AppRef.content.home[AppRef.currentLang]['home']}}</ion-title>
+      <div class="toogle-left">
+        <ion-select  [(ngModel)]="AppRef.currentLang" interface="popover">
+          <ion-select-option  value="en">English</ion-select-option>
+          <ion-select-option  value="hi">Hindi</ion-select-option>
+          <ion-select-option value="pb">Punjabi</ion-select-option>
+        </ion-select>
+    </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="logo-container">
+      <img src="../../assets/icon/icon.png" class="logo-height" alt= "covia-logo">
+  </div>
+    <h1 class="covia-title">{{AppRef.content.home[AppRef.currentLang]['title']}}</h1>
+    <h2 class="covia-subtitle">{{AppRef.content.home[AppRef.currentLang]['subtitle']}}</h2>
+  <div class="ion-text-center">
+    <ion-button color="primary" (click)="questionSection()">{{AppRef.content.home[AppRef.currentLang]['checkupButton']}}</ion-button>
+   <ion-button color="dark" (click)="map()">
+      {{AppRef.content.home[AppRef.currentLang]['trackButton']}}
+    </ion-button>
+  </div><br/><br/>
+
+  <div class="footer-area">
+  <div class="social-footer-area">
+    <h2 class="covia-footer-title">{{AppRef.content.home[AppRef.currentLang]['updates']}}
+      {{AppRef.content.home[AppRef.currentLang]['on']}}</h2>
+      <span (click)="br.openLink('whatsapp://send/?phone=919013151515&text=Namaste&source&data')">
+        <ion-icon name="logo-whatsapp" class="whatsapp"></ion-icon>
+      </span>
+      <span (click)="br.openLink('https://twitter.com/mygovindia')">
+        <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+      </span>
+      <span (click)="br.openLink('https://www.facebook.com/MyGovIndia/')">
+        <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+      </span>
+      <span (click)="br.openLink('https://t.me/MyGovCoronaNewsDesk')">
+        <img width="45px" height="45px" src="../../assets/icon/telegram.png" alt= "covia-logo">
+      </span>
+  </div>
+  <p class="ion-text-center">A <a style="text-decoration: none;" href="https://robomx.tech"  target="_blank" class="robomx">RoboMx&reg;</a> creation.</p> 
+</div>
+</ion-content>  

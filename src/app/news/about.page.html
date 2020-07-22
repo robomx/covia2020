@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header-section">
+      <ion-title class="ion-text-left">News</ion-title>
+      <div class="toogle-left">
+        <ion-select  [(ngModel)]="AppRef.currentLang" interface="popover">
+          <ion-select-option  value="en">English</ion-select-option>
+          <ion-select-option  value="hi">Hindi</ion-select-option>
+          <ion-select-option value="pb">Punjabi</ion-select-option>
+        </ion-select>
+    </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="container">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let card of image" size-lg="3" size-md="4" size-sm="6" size="12">
+        <img [src]="card.link"> 
+
+        <ion-card-header [class]="card.source.split(' ')[0]">
+          <ion-card-title class="white" style="display: flex; align-items: center;">
+            <ion-icon *ngIf="!card.source.split(' ')[0].includes('telegram')" [name]="'logo-' + card.source.split(' ')[0]"></ion-icon>
+            <img style="width: 45px;" *ngIf="card.source.split(' ')[0].includes('telegram')" width="45px" height="45px" src="../../assets/icon/telegram_white.png" alt= "Telegram">
+            <span>{{card.source.split(' ')[1]}}</span>
+          </ion-card-title>
+          <ion-card-subtitle class="ion-text-right white">updated on {{card.timestamp}}</ion-card-subtitle>
+
+        </ion-card-header>
+      </ion-col>  
+    </ion-row>
+  </ion-grid>
+
+  <div class="covia-news" *ngIf="image.length == 0">
+    <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let card of [1,1,1,1,1,1,1,1,1]" size-lg="3" size-md="4" size-sm="6" size="12">
+        <ion-skeleton-text animated style="width: 400px; margin: auto; display: block; height: 400px;"></ion-skeleton-text>
+        
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

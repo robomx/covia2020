@@ -1,0 +1,106 @@
+[
+   {
+        "fact" : "The likelihood of shoes spreading COVID-19 is very low",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/mythbusters---shoes.tmb-1920v.png?sfvrsn=cc08f8dd_1"
+   },
+    {
+        "fact": "The coronavirus disease (COVID-19) is caused by a virus, NOT by bacteria",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/mythbuster-bacteria-vs-virus.tmb-1920v.png?sfvrsn=ff438da4_1"
+    },
+    {
+        "fact": " The prolonged use of medical masks* when properly worn, DOES NOT cause CO2 intoxication nor oxygen deficiency",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/mythbuster-masks.tmb-1920v.png?sfvrsn=7324738d_1"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/eng-mythbusting-ncov-(80).tmb-1920v.png?sfvrsn=afa995ff_1",
+        "fact": "Most people who get COVID-19 recover from i"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/eng-mythbusting-ncov-(79).tmb-1920v.png?sfvrsn=86f79761_1",
+        "fact": "Drinking alcohol does not protect you against COVID-19 and can be dangerou"
+    },
+    {
+        "fact": "There are currently no drugs licensed for the treatment or prevention of COVID-19",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/eng-mythbusting-ncov-(75).tmb-1920v.png?sfvrsn=a1aa01b1_1"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/3d5be4101d62b4f6bb891c9d0c65aff78.tmb-1920v.png?sfvrsn=ca950e12_2",
+        "fact": "Adding pepper to your soup or other meals DOES NOT prevent or cure COVID-1"
+    },
+    {
+        "fact": "COVID-19 is NOT transmitted through houseflies",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/7.tmb-1920v.png?sfvrsn=1aab7c90_2"
+    },
+    {
+        "fact": "Spraying and introducing bleach or another disinfectant into your body WILL NOT protect you against COVID-19 and can be dangerous",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/24.tmb-1920v.png?sfvrsn=eeb1f366_2"
+    },
+    {
+        "fact": "Drinking methanol, ethanol or bleach DOES NOT prevent or cure COVID-19 and can be extremely dangerous",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/28.tmb-1920v.png?sfvrsn=a0bb5119_2"
+    },
+    {
+        "fact": "5G mobile networks DO NOT spread COVID-19",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/26-revised.tmb-1920v.png?sfvrsn=7d5199ac_1"
+    },
+    {
+        "fact": "Exposing yourself to the sun or temperatures higher than 25 degree C DOES NOT protect you from COVID-19",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/eng-mythbusting-ncov-(15).tmb-1920v.png?sfvrsn=a8b9e94_2"
+    },
+    {
+        "fact": "Being able to hold your breath for 10 seconds or more without coughing or feeling discomfort DOES NOT mean you are free from COVID-19",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mb-sun-exposure.tmb-1920v.png?sfvrsn=658ce588_6"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mb-breathing-exercice.tmb-1920v.jpg?sfvrsn=db06f4a9_5",
+        "fact": "The COVID-19 virus can spread in hot and humid climate"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/52.tmb-1920v.png?sfvrsn=862374e_6",
+        "fact": "Cold weather and snow CANNOT kill the COVID-19 viru"
+    },
+    {
+        "fact": "Taking a hot bath does not prevent COVID-19",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mb-cold-snow.tmb-1920v.png?sfvrsn=1e557ba_5"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mb-hot-bath.tmb-1920v.png?sfvrsn=f1ebbc_5",
+        "fact": "The COVID-19 virus CANNOT be spread through mosquito bites"
+    },
+    {
+        "fact": "Hand dryers are NOT effective in killing the COVID-19 virus",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mb-mosquito-bite.tmb-1920v.png?sfvrsn=a1d90f6_5"
+    },
+    {
+        "fact": "Ultra-violet (UV) lamps should NOT be used to disinfect hands or other areas of your skin",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mythbusters-27.tmb-1920v.png?sfvrsn=d17bc6bb_9"
+    },
+    {
+        "fact": "Thermal scanners CANNOT detect COVID-19",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/mb---uv-light-edited.tmb-1920v.png?sfvrsn=14c7467d_7"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/11.tmb-1920v.png?sfvrsn=97f2a51e_10",
+        "fact": "Vaccines against pneumonia DO NOT protect against the COVID-19 viru"
+    },
+    {
+        "fact": "Rinsing your nose with saline does NOT prevent COVID-19 ",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/23.tmb-1920v.png?sfvrsn=c65dad38_15"
+    },
+    {
+        "fact": "Eating garlic does NOT prevent COVID-19",
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/19.tmb-1920v.png?sfvrsn=52adfc93_15"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/mythbuster-2.tmb-1920v.png?sfvrsn=635d24e5_15",
+        "fact": "People of all ages can be infected by the COVID-19 viru"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/mythbuster-3.tmb-1920v.png?sfvrsn=10657e42_15",
+        "fact": "Antibiotics CANNOT prevent or treat COVID-1"
+    },
+    {
+        "image" : "https://who.int/images/default-source/health-topics/coronavirus/myth-busters/web-mythbusters/mythbuster-4.tmb-1920v.png?sfvrsn=e163bada_15",
+        "fact": "There are no medicines that can prevent or treat COVID-1"
+    }
+  ]

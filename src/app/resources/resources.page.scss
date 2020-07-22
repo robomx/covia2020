@@ -1,0 +1,24 @@
+.header-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.back {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+ion-item {
+    cursor: pointer;
+}
+
+.data-table { 
+    min-width: 800 px;
+}
+
+.data-col {
+    background: #f0f0f0;
+}
+.has-focus { 
+    background: #fdf696;
+}

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header-section">
+      <ion-icon name="arrow-back" class="back" (click)="closeModal()"></ion-icon>
+      <ion-title class="ion-text-left">{{AppRef.content.modal[AppRef.currentLang]['title']}}</ion-title>
+      <div class="toogle-left">
+        <ion-select  [(ngModel)]="AppRef.currentLang" interface="popover">
+          <ion-select-option  value="en">English</ion-select-option>
+          <ion-select-option  value="hi">Hindi</ion-select-option>
+          <ion-select-option value="pb">Punjabi</ion-select-option>
+        </ion-select>
+    </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngClass]="heart_class + ' back-logo'">
+    <ion-icon name="heart" class="size"></ion-icon>
+  </div>
+  <div>
+    <p class="covia-subtitle" *ngIf="score == 0">{{AppRef.content.modal[AppRef.currentLang]['safe']}} </p>
+    <p class="covia-subtitle" *ngIf="score >= 1 && score <= 2">{{AppRef.content.modal[AppRef.currentLang]['stress']}} </p>
+    <p class="covia-subtitle" *ngIf="score >= 3 && score <= 5">{{AppRef.content.modal[AppRef.currentLang]['hydrate']}}</p>
+    <p class="covia-subtitle" *ngIf="score >=6 && score <=12">{{AppRef.content.modal[AppRef.currentLang]['consult']}}</p>
+    <p class="covia-subtitle" *ngIf="score >=13">{{AppRef.content.modal[AppRef.currentLang]['call']}} <a href="tel:0286517800">02-8-651-7800</a></p>
+  </div>
+  <div>
+    <ion-item style="text-align: center" lines="none">
+      <ion-label>
+       <strong> {{AppRef.content.modal[AppRef.currentLang]['score']}} {{percent}}%</strong>
+      </ion-label>
+    </ion-item>
+    <ion-item style="text-align: center" lines="none">
+      <ion-label>
+       <h4>{{AppRef.content.modal[AppRef.currentLang]['adopt']}} <a href="https://www.doh.gov.ph">DOH</a> {{AppRef.content.modal[AppRef.currentLang]['guide']}}</h4>
+      </ion-label>
+    </ion-item>
+  </div>
+</ion-content>

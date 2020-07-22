@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    
+  <div class="header-section">
+    <ion-title class="ion-text-left">{{AppRef.content.home[AppRef.currentLang]['barometer']}}</ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <div id="shimmer" *ngIf="!loaded">
+      <ion-spinner style="padding: 50px; margin-left: auto; margin-right: auto; display: block;top: 31%;"></ion-spinner>
+   </div>
+  <iframe sandbox="allow-same-origin allow-scripts" onload="document.getElementById('shimmer').style.display='none'" [src]="url" scrolling="yes">
+  </iframe>
+</ion-content>

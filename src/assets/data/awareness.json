@@ -1,0 +1,52 @@
+[
+  {
+      "eng": {
+        "text": "Poster on Social distancing in a market place during COVID-19",
+        "image": "https://www.mohfw.gov.in/assets/images/socialdistancingEnglish_page-0001.png"
+      },
+      "hindi": {
+        "text": "COVID-19 के दौरान एक बाजार स्थान पर सामाजिक गड़बड़ी पर पोस्टर",
+        "image": "https://www.mohfw.gov.in/assets/images/socialdistancingHindi_page-0001.png"
+      }
+  },
+  {
+      "eng": {
+        "text": "When to get tested for COVID-19",
+        "image": "https://www.mohfw.gov.in/assets/images/FINAL_14_03_2020_ENg_page-0001.png"
+      },
+      "hindi": {
+        "text": "जब COVID-19 के लिए परीक्षण किया जाना है",
+        "image": "https://www.mohfw.gov.in/assets/images/FINAL_14_03_2020_Hindi_page-0001.png"
+      }
+  },
+  {
+      "eng": {
+        "text": "Posters for Safety measures against COVID-19",
+        "image": "https://www.mohfw.gov.in/assets/images/ProtectivemeasuresEng_page-0001.png"
+      },
+      "hindi": {
+        "text": "COVID-19 के खिलाफ सुरक्षा उपायों के लिए पोस्टर",
+        "image": "https://www.mohfw.gov.in/assets/images/ProtectivemeasuresHin_page-0001.png"
+      }
+  },
+  {
+      "eng": {
+        "text": "Posters for Indians traveling from abroad",
+        "image": "https://www.mohfw.gov.in/assets/images/PostrerEnglishtraveller_page-0001.png"
+      },
+      "hindi": {
+        "text": "विदेशों से यात्रा करने वाले भारतीयों के लिए पोस्टर",
+        "image": "https://www.mohfw.gov.in/assets/images/PosterTravellerHindi_page-0001.png"
+      }
+  },
+  {
+      "eng": {
+        "text": "Do's and Don't Poster",
+        "image": "https://www.mohfw.gov.in/assets/images/Poster_Corona_ad_Eng_page-0001.png"
+      },
+      "hindi": {
+        "text": "करो और मत करो पोस्टर",
+        "image": "https://www.mohfw.gov.in/assets/images/Poster_Corona_ad_Hin_page-0001.png"
+      }
+  }
+]

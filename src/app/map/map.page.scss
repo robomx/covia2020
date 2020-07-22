@@ -1,0 +1,51 @@
+.header-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.back {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.image {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+.covia-title {
+    letter-spacing: 4px;
+    color: #35495e;
+    font-size: 22px;
+    text-align: center;
+  }
+  .covia-questions {
+    color: #35495e;
+    font-size: 22px;
+    text-align: justify;
+    padding:10px;
+  }
+  .btn-center {
+      display: flex;
+      justify-content: center;
+  }
+ 
+  .btn-block {
+      display: block;
+      margin:auto;
+  }
+
+  .btn-sub {
+    font-size: 20px;
+    margin: 20px;
+  }
+  .header-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+  }

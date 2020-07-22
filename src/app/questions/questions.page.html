@@ -1,0 +1,17 @@
+ <ion-header>
+  <ion-toolbar>
+    <div class="header-section">
+      <ion-icon name="arrow-back" class="back" (click)="home()"></ion-icon>
+      <ion-title class="ion-text-left">{{AppRef.content.home[AppRef.currentLang]['checkupButton']}}</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="shimmer" *ngIf="!loaded">
+        <p style="height: 56px;display: flex;justify-content: center;" *ngFor="let tables of [1,2,3,4,5,6,7,8,9]" ><ion-skeleton-text animated style="width: 80%"></ion-skeleton-text></p>
+  </div>
+  <iframe sandbox="allow-same-origin allow-scripts" onload="document.getElementById('shimmer').style.display='none'" [src]="url" scrolling="yes">
+    <p>Your browser does not support iframes.</p>
+  </iframe> 
+</ion-content>

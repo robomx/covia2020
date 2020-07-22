@@ -1,0 +1,40 @@
+<ion-header>
+  <div class="header-section">
+    <ion-icon name="arrow-back" class="back" (click)="info()"></ion-icon>
+    <ion-title class="ion-text-center">Awareness</ion-title>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="activated" >
+    <ion-segment-button (click)="openHindi()" value="hindi">
+      <ion-label>Hindi</ion-label>
+    </ion-segment-button>
+    
+    <ion-segment-button (click)="openEng()" value="eng">
+      <ion-label>English</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+<br>
+
+<div *ngIf="hindi.length == 0">
+  <p style="padding: 15px; height: 22px;" *ngFor="let p of [1,2,3,4,5,6]">
+    <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
+  </p>
+</div>
+
+<div id="hindi" *ngIf="hindi.length > 0">
+  <ion-item *ngFor= "let h of hindi">
+    <ion-label (click)="loadLink(h.image)">
+     <a> {{h.text}}</a>
+    </ion-label>
+  </ion-item>
+</div>
+<div id="english" style="display: none;" *ngIf="english.length > 0">
+  <ion-item *ngFor="let e of english">
+    <ion-label (click)="loadLink(e.image)">
+     <a> {{e.text}}</a>
+    </ion-label>
+  </ion-item>
+</div>
+</ion-content>

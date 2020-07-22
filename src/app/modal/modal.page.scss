@@ -1,0 +1,64 @@
+.back-logo {
+    height: 189px;
+    width: 189px;
+    background: #23b14d; // orange color: #ff7f26 // red color: #ed1b24 // green oclor: #23b14d
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.back {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.yellow {
+    background: #ffff00;
+}
+
+.orange {
+    background: #ff7f26
+}
+
+.red {
+    background: #ed1b24;
+}
+
+.green {
+    background: #23b14d
+}
+
+.size {
+    font-size: 89px;
+    color:white;
+    animation: beat 1s linear infinite;
+}
+.covia-subtitle {
+    font-size: 17px;
+    word-break: break-word;
+    color: rgb(82, 100, 136);
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .header-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  @keyframes beat {
+      0% {
+          transform: scale(0.9);
+      }
+      50% {
+          transform: scale(1.1);
+      }
+      100% {
+          transform: scale(0.9);
+      }
+  }
+  

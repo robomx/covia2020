@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header-section">
+      <ion-title class="ion-text-left">{{AppRef.content.care[AppRef.currentLang]['care']}}</ion-title>
+      <div class="toogle-left">
+        <ion-select  [(ngModel)]="AppRef.currentLang" interface="popover">
+          <ion-select-option  value="en">English</ion-select-option>
+          <ion-select-option  value="hi">Hindi</ion-select-option>
+          <ion-select-option value="pb">Punjabi</ion-select-option>
+        </ion-select>
+    </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="contianer">
+  <h1 class="covia-title">{{AppRef.content.care[AppRef.currentLang]['title']}}</h1>
+  <div>
+    <ion-segment [(ngModel)]="activated">
+      <ion-segment-button value="sym" (click)="symChange()">
+        <ion-label>{{AppRef.content.care[AppRef.currentLang]['symptom']}}</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="pre" (click)="preChange()">
+        <ion-label>{{AppRef.content.care[AppRef.currentLang]['precaution']}}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+</div>
+
+  <div class="covia-page-background" id="symptoms">
+    <h1 class="covia-title">{{AppRef.content.care[AppRef.currentLang]['symptom']}}</h1>
+    <div class="covia-instruction">
+      <p class="ion-text-justify covia-subtitle">{{AppRef.content.care[AppRef.currentLang]['symNote']}}</p>
+    </div>
+    <p class="covia-sectionTitle">{{AppRef.content.care[AppRef.currentLang]['symWatch']}}</p>
+    <p class="covia-subtitle ion-text-justify">{{AppRef.content.care[AppRef.currentLang]['symReport']}}</p>
+    <p class="covia-subtitle ion-text-justify">{{AppRef.content.care[AppRef.currentLang]['symPoints']}}</p>
+    <ul class="covia-subtitle">
+      <li>{{AppRef.content.care[AppRef.currentLang]['fever']}}</li>
+      <li>{{AppRef.content.care[AppRef.currentLang]['cough']}}</li>
+      <li>{{AppRef.content.care[AppRef.currentLang]['breath']}}</li>
+    </ul>
+    <div class="covia-warning">
+      <p class="covia-subtitle ion-text-justify">{{AppRef.content.care[AppRef.currentLang]['symSign']}}</p>
+      <ul class="covia-subtitle">
+        <li>{{AppRef.content.care[AppRef.currentLang]['pt1']}}</li>
+        <li>{{AppRef.content.care[AppRef.currentLang]['pt2']}}</li>
+        <li>{{AppRef.content.care[AppRef.currentLang]['pt3']}}</li>
+        <li>{{AppRef.content.care[AppRef.currentLang]['pt4']}}</li>
+      </ul>
+      
+    </div>
+  </div>
+  <div class="covia-page-background" id="precaution" style="display: none;">
+    <h1 class="covia-title">{{AppRef.content.care[AppRef.currentLang]['precaution']}}</h1>
+    <div class="covia-instruction">
+      <p class="ion-text-justify covia-subtitle">{{AppRef.content.care[AppRef.currentLang]['preNote']}}</p>
+    </div>
+    <p class="covia-sectionTitle">{{AppRef.content.care[AppRef.currentLang]['preDo']}}</p>
+    <p class="covia-subtitle ion-text-justify"><strong>{{AppRef.content.care[AppRef.currentLang]['preWash']}}</strong><br/>
+      {{AppRef.content.care[AppRef.currentLang]['preWashNote']}}<br/>
+      
+     <b>{{AppRef.content.care[AppRef.currentLang]['preWhy']}} </b> {{AppRef.content.care[AppRef.currentLang]['preWashWhy']}}</p>
+    <p class="covia-subtitle ion-text-justify"><strong>{{AppRef.content.care[AppRef.currentLang]['preSocial']}}</strong><br/>
+      {{AppRef.content.care[AppRef.currentLang]['preSocialNote']}}<br/>
+      
+     <b> {{AppRef.content.care[AppRef.currentLang]['preWhy']}}</b>{{AppRef.content.care[AppRef.currentLang]['preSocialWhy']}}</p>
+     <p class="covia-subtitle ion-text-justify">
+    <b>{{AppRef.content.care[AppRef.currentLang]['preAvoid']}}</b> <br/>
+     <b>{{AppRef.content.care[AppRef.currentLang]['preWhy']}}</b>{{AppRef.content.care[AppRef.currentLang]['preAvoidWhy']}}
+     </p>
+     <p class="covia-subtitle ion-text-justify">
+      <b>{{AppRef.content.care[AppRef.currentLang]['prePractice']}}</b><br/>
+      {{AppRef.content.care[AppRef.currentLang]['prePracticeNote']}}<br/>
+     <b>{{AppRef.content.care[AppRef.currentLang]['preWhy']}}</b>{{AppRef.content.care[AppRef.currentLang]['prePracticeWhy']}}
+     </p>
+     <p class="covia-subtitle ion-text-justify">
+      <b>{{AppRef.content.care[AppRef.currentLang]['preHome']}}</b><br/>{{AppRef.content.care[AppRef.currentLang]['preHomeNote']}}<br/>
+
+     <b>{{AppRef.content.care[AppRef.currentLang]['preWhy']}}</b> {{AppRef.content.care[AppRef.currentLang]['preHomeWhy']}}
+     </p>
+    <div class="covia-warning">
+      <p class="covia-subtitle ion-text-justify">{{AppRef.content.care[AppRef.currentLang]['preSign']}}</p>
+      <ul class="covia-subtitle">
+        <li>{{AppRef.content.care[AppRef.currentLang]['prePt1']}}</li>
+        <li>{{AppRef.content.care[AppRef.currentLang]['prePt2']}}</li>
+        <li>{{AppRef.content.care[AppRef.currentLang]['prePt3']}}</li>
+      </ul>
+    </div>
+      <p class="covia-subtitle ion-text-justify" id="info">{{AppRef.content.care[AppRef.currentLang]['info']}}</p>
+  </div>
+ </div>
+</ion-content>

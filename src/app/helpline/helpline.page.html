@@ -1,0 +1,32 @@
+<ion-header>
+  <div class="header-section">
+    <ion-icon name="arrow-back" class="back" (click)="info()"></ion-icon>
+    <ion-title class="ion-text-center">Helpline</ion-title>
+  </div>
+</ion-header>
+
+<ion-content>
+ 
+ 
+  <div style="padding: 10px;">
+    <p style="font-size: 20px;">Indian Helpline Numbers:</p>
+    <p ><a  href="https://www.mygov.in/" target="_blank" style="text-decoration: none;">MyGov.in</a> website has provided the following helpline number of States and Union Territory.</p>
+  </div>
+  <ion-searchbar (ionInput)="runTimeChange($event)"  ></ion-searchbar>
+    <div style="padding: 10px;" *ngIf="show">
+      <p  *ngFor="let card of [1,2,3,4,5,6,7,8,9]">
+        <ion-skeleton-text animated style="width: 100%; margin: auto; display: block; height: 100px;"></ion-skeleton-text>
+      </p>
+    </div>
+    <div>
+      <h2 class="ion-text-center" *ngIf="help_search.length==0">No result found!</h2>
+    <ion-card  size-sm *ngFor="let card of help_search">
+      <ion-card-header>
+        <ion-card-title>{{card.number}}</ion-card-title>
+       <a href="tel:{{card.number}}"><ion-icon name="call" style="float: right; font-size: 27px; margin-top: -12px;"></ion-icon></a>
+        <ion-card-subtitle>{{card.state}}</ion-card-subtitle>
+      </ion-card-header>
+      
+    </ion-card>
+  </div>
+</ion-content>

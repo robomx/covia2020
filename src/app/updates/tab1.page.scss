@@ -1,0 +1,50 @@
+.covia-table-flex {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+}
+.covia-table {
+  text-align: center;
+  margin-top: 10px; 
+  overflow: auto;
+  display: block;
+  touch-action: auto;
+  background-color: whitesmoke;
+}
+.table-data {
+  padding: 15px;
+  border: 1px solid #bbb9b9;
+  color: #35495e;
+  text-align: initial;
+}
+.data-width {
+  width: 180px;
+}
+.source {
+  padding: 5px;
+  color: #35495e;
+}
+.header-section {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.toogle-left {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.covia-card-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+}
+@media (max-width:768px) {
+  .covia-card-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
